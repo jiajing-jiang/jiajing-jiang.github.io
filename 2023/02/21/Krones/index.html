@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   
   
-  <title>&lt;center&gt;克朗斯项目 Share2Act 系统用户手册&lt;/center&gt; | Hexo</title>
+  <title>克朗斯项目 Share2Act 系统用户手册 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="4. 操作说明 4.1. 登录 4.2. My profile 4.2.1. 功能介绍 4.2.2. 查看个人资料 4.2.3. 编辑个人资料   4.3. Equipment 4.4. User Management 4.4.1. 权限概述 4.4.1.1. 角色 4.4.1.2. 对象角色   4.4.2. All User 4.4.3. Teams   4.5. Connect 4">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&lt;center&gt;克朗斯项目 Share2Act 系统用户手册&lt;&#x2F;center&gt;">
+<meta property="og:title" content="克朗斯项目 Share2Act 系统用户手册">
 <meta property="og:url" content="http://example.com/2023/02/21/Krones/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="4. 操作说明 4.1. 登录 4.2. My profile 4.2.1. 功能介绍 4.2.2. 查看个人资料 4.2.3. 编辑个人资料   4.3. Equipment 4.4. User Management 4.4.1. 权限概述 4.4.1.1. 角色 4.4.1.2. 对象角色   4.4.2. All User 4.4.3. Teams   4.5. Connect 4">
@@ -99,7 +99,7 @@
 <meta property="og:image" content="https://sessions.dev.share2act.cn/pics/84.png">
 <meta property="og:image" content="https://sessions.dev.share2act.cn/pics/85.png">
 <meta property="article:published_time" content="2023-02-21T03:40:38.380Z">
-<meta property="article:modified_time" content="2023-02-22T09:51:34.357Z">
+<meta property="article:modified_time" content="2023-02-23T01:24:04.473Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://sessions.dev.share2act.cn/pics/1.png">
@@ -173,7 +173,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      &lt;center&gt;克朗斯项目 Share2Act 系统用户手册&lt;/center&gt;
+      克朗斯项目 Share2Act 系统用户手册
     </h1>
   
 
@@ -243,7 +243,10 @@
 <li><a href="#4812-line-status">4.8.1.2. Line status</a></li>
 <li><a href="#4813-analysis-board">4.8.1.3. Analysis board</a></li>
 <li><a href="#4814-report">4.8.1.4. Report</a></li>
+<li><a href="#4815-timestealer">4.8.1.5. Timestealer</a></li>
 <li><a href="#4815-production-counter">4.8.1.5. Production counter</a></li>
+<li><a href="#4815-speeds">4.8.1.5. Speeds</a></li>
+<li><a href="#4815-%E5%81%9C%E6%9C%BA%E7%AE%A1%E7%90%86">4.8.1.5. 停机管理</a></li>
 </ul>
 </li>
 <li><a href="#482-analytics">4.8.2. Analytics</a><ul>
@@ -554,24 +557,28 @@
 </li>
 <li><p>生产计数器：总的生产量，合格数量，废品数量、合格率和废品率</p>
 </li>
-<li><p>当前产品</p>
+<li><p>当前生产产品</p>
 </li>
 <li><p>速度：当前速度、产品速度、设定速度</p>
 </li>
 <li><p>计划外停机时间分类TOP</p>
 </li>
+<li><p>TOP Timestealer</p>
+</li>
 </ul>
 <p><strong>图 86-仪表板</strong></p>
-<p>点击“计划外停机时间分类TOP”区域，可查看时间间隔内所有停机信息。按停机类别展示，显示停机的消息编码、消息、起始时间和持续时间</p>
+<p>点击“当前生产产品”，可显示所选时间范围内生产的产品信息</p>
+<p><strong>图 86-产品</strong></p>
+<p>点击“计划外停机时间分类TOP”，可查看时间间隔内所有停机信息。按停机类别展示，显示停机的消息编码、消息、起始时间和持续时间</p>
 <p><strong>图 89-停机时间详情</strong></p>
 <p>仪表板还显示组合的速度和状态图（堆叠条形图），使输入一目了然。</p>
 <p>当前产品、时间间隔、持续时间</p>
 <p>速度：Product Speed、Set Machine Speed、Set &#x3D; Product Machine Speed</p>
 <p>Checkmate Curve：平均生产单位</p>
 <p>状态：停机类型-生产（绿色）、计划停机时间（蓝色）、外部故障（红色）、自身故障（深红）和空转时间（浅蓝色）</p>
-<p>时间缩放用于放大各个时间段</p>
+<p>时间缩放可选择查看特定时间范围的状态图</p>
 <p><strong>图 90-速度和状态图</strong></p>
-<p>停机时间详情显示所选状态的基本信息，包括机器、停机类型、开始和结束时间、持续时间和停机详细列表。</p>
+<p>停机时间详情显示所选状态的基本信息，包括机器、停机类型、开始和结束时间、持续时间和停机事件详细列表。</p>
 <p><strong>图 91-状态停机时间详情</strong></p>
 <p>如果在数据收集期间未检测到机器或生产线上发生的事件，则可能会出现真实情况和数据描述之间的存在差异。在这种情况下，授权用户可以纠正数据，以确保机器或生产线的实际状况和数据一致。</p>
 <p>可以使用以下校正选项：</p>
@@ -598,7 +605,7 @@
 <p>还可以为与状态无关的时间点或特定的时间范围创建注释。</p>
 <h4 id="4-8-1-2-Line-status"><a href="#4-8-1-2-Line-status" class="headerlink" title="4.8.1.2. Line status"></a>4.8.1.2. Line status</h4><p>显示生产线中每个机器的状态。机器标有相应的机器符号和表示其当前状态的颜色。</p>
 <p><strong>图 98-生产线状态</strong></p>
-<h4 id="4-8-1-3-Analysis-board"><a href="#4-8-1-3-Analysis-board" class="headerlink" title="4.8.1.3. Analysis board"></a>4.8.1.3. Analysis board</h4><p>分析栏显示生产线中所有机器的状态图，每个停机时间都标有与其分类相对应的颜色。</p>
+<h4 id="4-8-1-3-Analysis-board"><a href="#4-8-1-3-Analysis-board" class="headerlink" title="4.8.1.3. Analysis board"></a>4.8.1.3. Analysis board</h4><p>分析栏显示生产线中所有机器的状态图，每个停机都标有与其分类相对应的颜色。</p>
 <p><strong>图 99-分析栏</strong></p>
 <h4 id="4-8-1-4-Report"><a href="#4-8-1-4-Report" class="headerlink" title="4.8.1.4. Report"></a>4.8.1.4. Report</h4><p>该报告将所有集成机器的关键性能指标和其他与性能相关的状态信息可视化。</p>
 <p>报告中对整条生产线或每台机器的关键性能指标可视化，并以瀑布图的形式说明生产和损失分类时间和生产计数情况。</p>
@@ -630,14 +637,14 @@
 <ul>
 <li>Speed</li>
 </ul>
-<p>速度显示所选生产线或机器在时间间隔内的速度和状态图。</p>
+<p>速度显示所选生产线或机器在时间范围内的速度和状态图。</p>
 <p><strong>图 102-速度</strong></p>
 <ul>
-<li>Unplanned downtimes</li>
+<li>Downtimes</li>
 </ul>
-<p>记录所有计划外的故障信息，按消息显示故障数量TOP。</p>
+<p>记录所有计划内和计划外的停机信息。</p>
 <p><strong>图 103-生产线计划外停机时间</strong></p>
-<p>对于机器的Unplanned downtimes还显示故障是否与系统相关，列出了所有系统相关和非系统相关的所有故障类型和对于故障数量。</p>
+<p>停机组列出了所有系统相关，非系统相关，计划内的所有停机类型。</p>
 <p><strong>图 104-机器计划外停机时间</strong></p>
 <ul>
 <li>Notes</li>
@@ -648,11 +655,11 @@
 <li>Export<ul>
 <li><p>机器报告可以导出为Excel，导出的文件中包含以下信息：</p>
 </li>
-<li><p>Time Range:所选时间间隔和机器的信息</p>
+<li><p>Time Range:所选时间范围和机器的信息</p>
 </li>
-<li><p>Top Downtimes by Message: 按消息统计的计划外故障数量TOP</p>
+<li><p>Top Downtimes by Message: 所有计划内和计划外的停机</p>
 </li>
-<li><p>Chronological Message List：分类故障消息列表</p>
+<li><p>Chronological Message List：分类停机列表</p>
 </li>
 <li><p>KPIs:所有KPI信息</p>
 </li>
@@ -661,8 +668,17 @@
 </ul>
 </li>
 </ul>
+<h4 id="4-8-1-5-Timestealer"><a href="#4-8-1-5-Timestealer" class="headerlink" title="4.8.1.5. Timestealer"></a>4.8.1.5. Timestealer</h4><p>Timestealer显示在生产线下造成停机的机器和他们的比例，相关的饼图和列表都显示了这这些机器单独或总共造成的总停机的比例。</p>
+<p><strong>图 106-Timestealer</strong></p>
+<p>用户通过点击机器来查看每台机器导致停机的比例</p>
+<p><strong>图 106-机器的Timestealer</strong></p>
 <h4 id="4-8-1-5-Production-counter"><a href="#4-8-1-5-Production-counter" class="headerlink" title="4.8.1.5. Production counter"></a>4.8.1.5. Production counter</h4><p>生产线中所有机器的生产情况，记录各个机器总的生产量、合格产品数量、合格率、废品数量、废品率。</p>
 <p><strong>图 106-生产计数器</strong></p>
+<h4 id="4-8-1-5-Speeds"><a href="#4-8-1-5-Speeds" class="headerlink" title="4.8.1.5. Speeds"></a>4.8.1.5. Speeds</h4><p>Speeds显示了生产线所有机器的速度图，该图以两种不同的模式提供数据。在实时模式下，图表显示当前速度、设定速度和产品速度的最新值，这些值会不断更新。在历史模式下，图表显示了所选时间段的平均速度，此外，指示器还显示了选定时间范围内的最大当前速度。</p>
+<p><strong>图 106-实时视图</strong></p>
+<p><strong>图 106-历史视图</strong></p>
+<h4 id="4-8-1-5-停机管理"><a href="#4-8-1-5-停机管理" class="headerlink" title="4.8.1.5. 停机管理"></a>4.8.1.5. 停机管理</h4><p>停机管理显示生产线所有停机信息，结合了所有选定设备停机时间的图形表示（条形图区域）和详细的表格视图。</p>
+<p><strong>图 106-停机管理</strong></p>
 <h3 id="4-8-2-Analytics"><a href="#4-8-2-Analytics" class="headerlink" title="4.8.2. Analytics"></a>4.8.2. Analytics</h3><p>分析提供对生产线性能的详细分析。</p>
 <h4 id="4-8-2-1-Trend-analysis"><a href="#4-8-2-1-Trend-analysis" class="headerlink" title="4.8.2.1. Trend analysis"></a>4.8.2.1. Trend analysis</h4><p>提供对生产线或机器性能指标的趋势分析，显示在时间间隔内所选KPI的走势（折线图）。</p>
 <p><strong>图 107-趋势分析</strong></p>
@@ -694,7 +710,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/21/Krones/" data-id="clefhxrqh0000skv46591e5mm" data-title="&lt;center&gt;克朗斯项目 Share2Act 系统用户手册&lt;/center&gt;" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/02/21/Krones/" data-id="clegf8ogk0000ecv49ttt9taz" data-title="克朗斯项目 Share2Act 系统用户手册" class="article-share-link">Share</a>
       
       
       
@@ -745,7 +761,7 @@
       <ul>
         
           <li>
-            <a href="/2023/02/21/Krones/">&lt;center&gt;克朗斯项目 Share2Act 系统用户手册&lt;/center&gt;</a>
+            <a href="/2023/02/21/Krones/">克朗斯项目 Share2Act 系统用户手册</a>
           </li>
         
           <li>
